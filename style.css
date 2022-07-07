@@ -75,6 +75,13 @@ body {
     transform-origin: left;
   }
 
+    a.header-link:active {
+    color: #D0D6F9;
+    font-weight: 600;
+    font-size: 24px;
+    width: fit-content;
+}
+
 .header-menu-num {
     font-weight: 600;
     padding-right: 8px;
@@ -114,13 +121,14 @@ p {
 }
 
 .explore-button {
+    z-index: 9;
     font-size: 32px;
     background-color: white;
     backdrop-filter: drop-shadow(30px 10px 4px #0B0D17);
     color:  #0B0D17;
     border-radius: 100%;
-    width: 234px;
-    height: 234px;
+    width: 230px;
+    height: 230px;
     font-family: 'Bellefair', serif;
     text-align: center;
     display: flex;
@@ -129,12 +137,32 @@ p {
    
 }
 
+.explore-button::after {
+    z-index: 0;
+    position:fixed;
+    content: "";
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background:rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    transform: scale(0);
+    transform-origin: center;
+    border: 35px;
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
 .explore-button:hover {
-    width: 240px;
-    height: 240px;
+    z-index: 0;
+
+    border: 35px;
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
-
+.explore-button:hover::after {
+    transform: scale(1);
+    transform-origin: center;
+}
 .content {
     display: flex;
     flex-direction: row;
@@ -142,3 +170,9 @@ p {
     align-items: center;
     margin: 200px 165px 100px 165px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
