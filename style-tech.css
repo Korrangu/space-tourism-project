@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("assets/technology/background-technology-desktop.jpg");
+       
+}
+
+    
+.header-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-line {
+    width: 32%;
+    margin-right: -35px;
+    height: 0px;
+    z-index: 9;
+    opacity: 0.5;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 55px;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 96px;
+    margin-right: 0cm;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Barlow Condensed', sans-serif;
+    backdrop-filter: blur(20px) drop-shadow(20px 10px 10px #0B0D17);
+    color: white;
+    width: 40%;
+    align-items: center;
+  
+}
+
+.header-list {
+    display: flex;
+    padding: 0;
+    margin: 0 20px 0 20px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.header-list::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    background: #D0D6F9;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  .header-list:hover {
+    color: #D0D6F9;
+    font-weight: 600;
+    font-size: 24px;
+    width: fit-content;
+  }
+  .header-list:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+    .header-link-current {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    width: fit-content;
+    text-decoration: underline;
+    text-underline-offset: 35px;
+}
+
+.header-menu-num {
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color:  #D0D6F9;
+
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Bellefair', serif;
+    font-size: 52px;
+    font-weight: 200;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+p {
+    color: #D0D6F9;
+    width: 480px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 auto 162px;
+}
+
+.page-number {
+    opacity: 0.25;
+    font-weight: 700;
+    padding-right: 8px;
+    padding-left: 0%;
+    margin-left: 161px;
+  }
+
+  .tech-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 161px;
+    margin-right: 161px;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .selection-num {
+    
+    width: 80px;
+    height: 80px;
+    border-style:inset;
+    border-radius: 100%;
+    color: rgba(208, 214, 249, 0.5);
+    border-color: rgba(208, 214, 249, 0.5);
+    background-color: rgba(255, 255, 255, 0.0);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .selection-num:hover {
+    color: rgba(208, 214, 249, 1);
+    border-color: rgba(208, 214, 249, 1);
+  }
+
+  .selection-num-current {
+    border: 2px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
